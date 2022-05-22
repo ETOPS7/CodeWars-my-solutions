@@ -1,2 +1,2 @@
 # CodeWars-my-solutions
-WARNING! HERE IS ANSWERS 
+WARNING! HERE IS MY SOLUTIONS 
