@@ -250,14 +250,16 @@
 
 // Square(n) Sum Завершите функцию квадратной суммы, чтобы она возводила в квадрат каждое переданное ей число, а затем суммировала результаты. Например, для [1, 2, 2] он должен вернуть 9, потому что 1^2 + 2^2 + 2^2 = 9.
 
+// // ?????????????????
+// let sum=0
 // function squareSum(numbers){
-//   let sum=0
-//   for (let i of numbers){
-//     sum=sum+i**2
+//  let arr=numbers.map(element => element**2)
+//   for (i of arr){
+//     sum+=i
 //   }
 //   return sum
 // }
-// console.log(squareSum([1,2])) //5
+// console.log(squareSum([1,2,5])) //5
 
 
 // Counting sheep...Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
@@ -455,3 +457,180 @@
 // }
 
 // console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+
+// Beginner - Lost Without a Map Учитывая массив целых чисел, вернуть новый массив с удвоением каждого значения. Например: [1, 2, 3] --> [2, 4, 6]
+
+// function maps(x){
+//   let newArr=[]
+//   for (let i=0; i<x.length; i++){
+//     newArr.push(x[i]*2)
+//   }
+//   return newArr
+// }
+// console.log(maps([1, 2, 3])) // [2, 4, 6])
+
+//   let newArr=[]
+// function maps(x){
+//   return x.map((y)=>y*2) 
+// }
+// console.log(maps([1, 2, 3])) // [2, 4, 6])
+
+// Returning Strings Создайте функцию, которая будет возвращать оператор приветствия, использующий ввод; ваша программа должна вернуть "Привет, <имя>, как дела сегодня?". [Убедитесь, что вы вводите именно то, что я написал, иначе программа может работать неправильно]
+
+// function greet(name){
+//       return `"Hello, ${name} how are you doing today?"`
+// }
+// console.log(greet("Ryan"))
+
+// Square Every Digit Добро пожаловать. В этой ката вас просят возвести в квадрат каждую цифру числа и соединить их. Например, если мы пропустим через функцию 9119, получится 811181, потому что 92 — это 81, а 12 — это 1. Примечание. Функция принимает целое число и возвращает целое число.
+
+// function squareDigits(num){
+// let arr=String(num).split('').map((el)=>el**2).join('')
+//      return Number(arr)
+// }
+// console.log(squareDigits(2112)) //4114
+
+// Disemvowel Trolls рулоны атакуют ваш раздел комментариев! Обычный способ справиться с этой ситуацией — удалить все гласные из комментариев троллей, нейтрализуя угрозу. Ваша задача — написать функцию, которая принимает строку и возвращает новую строку, в которой удалены все гласные. Например, строка «Этот сайт для неудачников, LOL!» станет «Ths wbst s fr lsrs LL!». Примечание: для этой ката y не считается гласной.
+
+
+// function disemvowel(str) {
+// let result=str.replace(/A|E|I|O|U|a|e|i|o|u/g, '')
+//   return result
+// }
+// console.log(disemvowel("This website is for losers LOL!"))
+
+// Highest and Lowest В этом небольшом задании вам дается строка чисел, разделенных пробелами, и вы должны вернуть наибольшее и наименьшее число.
+
+
+// function highAndLow(numbers){
+// let result=''
+//   let sort=numbers.split(' ').sort((a,b) => a-b)
+//   for (i of sort){
+//     result=sort[sort.length-1]+' '+sort[0]
+//   }
+// return result
+// }
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")) //("42 -9"))
+
+// Descending Order Ваша задача состоит в том, чтобы создать функцию, которая может принимать любое неотрицательное целое число в качестве аргумента и возвращать его с цифрами в порядке убывания. По сути, переставьте цифры, чтобы получить максимально возможное число.
+
+// function descendingOrder(n){
+//   let newStr=String(n).split('').sort((a,b) => b-a).join('')
+//   return Number(newStr)
+// }
+
+// console.log(descendingOrder(1021)) //2110
+
+// 7 kyu Mumbling На этот раз ни истории, ни теории. В приведенных ниже примерах показано, как написать функцию accum: Примеры: accum("abcd") -> "A-Bb-Ccc-Dddd" accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Ttttt-Yyyyyyy" accum("cwAt") -> "C-Ww-Aaa-Tttt" Параметр accum представляет собой строку, включающую только буквы из a..z и A..Z. 
+
+// function accum(s) {
+//   let result=''
+//   for (let i=0; i<s.length; i++){
+//     result+=s[i].toUpperCase()+s[i].toLowerCase().repeat(i)+(i!==s.length-1?'-':'')
+//   }
+//   return result
+// }
+// console.log(accum("ZpglnRxqenU")) //"Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+
+
+// Beginner Series #2 Clock Часы показывают ч часов, m минут и s секунд после полуночи. Ваша задача — написать функцию, которая возвращает время с полуночи в миллисекундах.
+
+// let sum=0
+// function past(h, m, s){
+//   let s1=h*60*60
+//   let s2=m*60
+//   console.log(s2)
+//   return sum=(s1+s2+s)*1000
+// }
+// console.log(past(0,1,1)) //61000
+
+// Function 1 - hello world
+
+// function greet(){
+//   return 'h'+'e'+'l'+'l'+'o'+' '+'w'+'o'+'r'+'l'+'d'+'!'
+// }
+
+
+// Count of positives / sum of negatives
+// Дан массив целых чисел. Возвращает массив, где первый элемент — это количество положительных чисел, а второй элемент — сумма отрицательных чисел. 0 не является ни положительным, ни отрицательным. Если вход представляет собой пустой массив или имеет значение null, верните пустой массив.
+
+// function countPositivesSumNegatives(input) {
+//   let countPosirives=0
+//   let sumNegatives=0
+//   let result=[]
+//   // for (let i=0; i<=input.length; i++) {
+//   for (let i of input) {
+//     if (i>=0){
+//     countPosirives++
+//     } else if (i<0) {
+//       sumNegatives+=i
+//     } else {
+//      return null
+//   }
+//   }
+//     return result=[countPosirives, sumNegatives]
+// }
+// console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])) //[10, -65]
+
+// function countPositivesSumNegatives(input) {
+//   let countPosirives=0
+//   let sumNegatives=0
+//   let result=[]
+//   for (let i=0; i<=input.length; i++) {
+//   // for (let i of input) {
+//    switch (input){
+//      case (i>0):
+//        return countPosirives++
+//       case (i<0):
+//        return sumNegatives+=i
+//      case(undefined):
+//        return result
+//        break;
+//  }
+// }
+//   return result=[countPosirives, sumNegatives]
+// }
+// console.log(countPositivesSumNegatives([3434,434,-4343,-34])) //[10, -65]
+
+
+  // function basicOp(operation, value1, value2){
+// switch (operation){
+//     case '+':
+//       return value1 + value2;
+//     case '-':
+//       return value1 - value2;
+//     case '*':
+//       return value1 * value2;
+//     case '/':
+//       return value1 / value2;
+//   default:
+//       return 0;
+// }
+// }
+  
+// console.log(basicOp('+', 44, 7)) //11
+
+
+// Invert values Учитывая набор чисел, верните добавку, обратную каждому из них. Каждое положительное становится отрицательным, а отрицательное становится положительным.
+
+// function invert(array) {
+//  return array.map((el => el ? el* -1 : el)
+// )}
+
+// console.log(invert([1,-2,3,-4,5])) //[-1,2,-3,4,-5]);
+
+// Reversed Words Завершите решение, чтобы оно перевернуло все слова в переданной строке.
+
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ')
+// }
+// console.log(reverseWords("hello world!")) // "world! hello"
+
+
+
+
+
+
+
+
+
