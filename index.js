@@ -227,7 +227,7 @@
 //       if (i<i+1){
 //         num=i
 //       }
-  
+
 //     }
 //     return num
 //   }
@@ -279,7 +279,7 @@
 //    if (i === true){
 
 //      result+=i
-     
+
 //    }
 //   }
 //  return result
@@ -368,7 +368,7 @@
 //       return 0;
 // }
 // }
-  
+
 // console.log(basicOp('+', 44, 7)) //11
 
 
@@ -607,7 +607,7 @@
 //       return 0;
 // }
 // }
-  
+
 // console.log(basicOp('+', 44, 7)) //11
 
 
@@ -626,11 +626,488 @@
 // }
 // console.log(reverseWords("hello world!")) // "world! hello"
 
+// Training JS #2: Basic data types--Number Я написал пять функций equal1,equal2,equal3,equal4,equal5, определяет шесть глобальных переменных v1 v2 v3 v4 v5 v6, каждая функция имеет две локальные переменные a,b, установите соответствующие значения для двух переменных (выберите из v1 --v6), что делает возвращаемое значение этой функции равным 100. Функция equal1 завершена, обратитесь к этому примеру, чтобы выполнить следующие функции. Когда вы закончите работу, нажмите «Выполнить тесты», чтобы проверить, правильно ли работает ваш код. В конце нажмите «Отправить», чтобы отправить свой код для прохождения этого ката.
+
+// var v1=50;v2=100,v3=150,v4=200,v5=2,v6=250
+// function equal1(){
+//   var a=v1   
+//   var b=v1   
+//   return a+b;
+// }
+//Please refer to the example above to complete the following functions
+// function equal2(){
+//   var a=v4   //set number value to a
+//   var b=v2   //set number value to b
+//   return a-b;
+// }
+// function equal3(){
+//   var a=v1   //set number value to a
+//   var b=v5   //set number value to b
+//   return a*b;
+// }
+// function equal4(){
+//   var a=v4   //set number value to a
+//   var b=v5   //set number value to b
+//   return a/b;
+// }
+// function equal5(){
+//   var a=v2   //set number value to a
+//   var b=v4   //set number value to b
+// //   return a%b;
+// }
+
+// Training JS #3: Basic data types--String
+// var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
+// function Dad(){
+//   //select some variable to combine "Dad"
+//   return d1+a2+d2;
+// }
+// function Bee(){
+//   //select some variable to combine "Bee"
+//   return b1+e2+e2;
+// }
+// function banana(){
+//   //select some variable to combine "banana"
+//   return b2+a2+n2+a2+n2+a2;
+// }
+
+// //answer some questions if you finished works above
+// function answer1(){
+//   //the answer should be "yes" or "no"
+//   return "no";
+// }
+// function answer2(){
+//   //the answer should be "yes" or "no"
+//   return "no";
+// }
+// function answer3(){
+//   //the answer should be "yes" or "no"
+//   return "yes";
+// }
+
+// Training JS #4: Basic data types--Array
+
+// function getLength(arr){
+//   //return length of arr
+//   return arr.length
+// }
+// function getFirst(arr){
+//   //return the first element of arr
+//   return arr[0]
+// }
+// function getLast(arr){
+//   //return the last element of arr
+//   return arr[arr.length-1]
+// }
+// function pushElement(arr){
+//   var el=1;
+//   arr.push(el)
+
+//   return arr
+// }
+// function popElement(arr){
+//   arr.pop()
+
+//   return arr
+// }
+
+// Training JS #5: Basic data types--Object
+
+// function animal(obj){
+
+//   return 'This ' + obj.color +' '+obj.name +' has'+ ' ' + obj.legs +' legs.'
+// }
+
+// //Training JS #7: if..else and ternary operator
+// Полная функция saleHotdogs/SaleHotDogs/sale_hotdogs, функция принимает 1 параметр: n, n — количество клиентов, покупающих хот-доги, разные числа имеют разные цены (см. следующую таблицу), возвращает число, которое покупатель должен заплатить, сколько денег .
+// number	price (cents)
+// n < 5	100
+// n >= 5 and n < 10	95
+// n >= 10	90
+
+// function saleHotdogs(n){
+//   let total=0
+
+//     n<5 ? total=n*100 : 
+//     n >= 5 && n < 10 ? total=n*95 :
+//     n >= 10	? total=n*90 : null
+
+//   return total
+// }
+// console.log(saleHotdogs(10))
+
+// Training JS #8: Conditional statement--switch
+// Завершите функцию howManydays, функция принимает 1 параметр: месяц, означает месяц года, разные месяцы имеют разные дни (см. следующую таблицу), возвращает число, указывающее, сколько дней в этом месяце (месяц всегда больше 0, меньше чем или равно 12).
+
+// function howManydays(month){
+//   var days=0
+//     switch (month){
+//       case 1:  
+//          days=31
+//       break;
+//     case 2:
+//          days=28
+//       break;
+//     case 3:
+//         days=31
+//     break;
+//        case 4:
+//         days=30
+//     break;
+//        case 5:
+//         days=31
+//     break;
+//        case 6:
+//        days=30
+//     break;
+//        case 7:
+//       days=31
+//     break;
+//        case 8:
+//         days=31
+//     break;
+//        case 9:
+//         days=30
+//     break;
+//        case 10:
+//        days=31
+//     break;
+//        case 11:
+//         days=30
+//     break;
+//        case 12:
+//         days=31
+//     break;
+
+//   default: 
+//   }
+//   return days;
+// }
+// console.log(howManydays(12)) //31
+
+// Training JS #9: loop statement --while and do..while
+//   Кодирование в функции padIt, функция принимает 2 параметра: str, это строка, представляющая строку для дополнения, нам нужно добавить некоторые "*" слева или справа от str n, это число, сколько раз нужно дополнить строку.
+
+// const padIt = (string, n) => {
+//   let result = string
+//   let i = 0
+//   while (i < n) {
+//     if (i % 2 === 0) {
+//       result = `*${result}`
+//     } else {
+//       result = `${result}*`
+//     }
+//     i += 1
+//   }
+//   return result
+// }
+// console.log(padIt("a",5)) //("***a**")
+
+
+// Training JS #10: loop statement --for
+//   Кодирование в функции pickIt, функция принимает 1 параметр:arr, это числовой массив, нам нужно пройти arr с помощью цикла for, если элемент нечетный номер, поместите его в нечетный массив, если это четное число, поместите его в четный массив. Я определил два массива нечетных и четных в функции, а также написал оператор возврата. ваша работа - написать цикл for.
+
+// function pickIt(arr){
+//   var odd=[],even=[];
+//   for (let i=0; i<arr.length; i++){
+//     if (arr[i]%2!==0){
+//       odd.push(arr[i])
+//     } else {
+//       even.push(arr[i])
+//     }
+//   }
+//   return [odd,even];
+// }
+// console.log(pickIt([8,1,5,4,6,1,1])) // [[1,5,1,1],[8,4,6]]);
+
+
+// // Training JS #12: loop statement --for..in and for..of
+// // Кодирование в функции giveMeFive, функция принимает 1 параметр: obj, это объект. Вам нужно пройти по obj, если длина ключа объекта равна 5, то запихнуть значение ключа в массив (вам нужно определить массив самостоятельно, в этот раз я вам не помогу). Дополнительно протолкните значение в массив, если длина значения равна 5.
+
+// function giveMeFive(obj){
+//   let newArr=[]
+//   for (let i in obj){
+//     if (obj.hasOwnProperty(i)){
+//     if  (i.length==5) newArr.push(i)
+//     if  (obj[i].length === 5) newArr.push(obj[i])
+//   }
+//   }
+//   return newArr
+// }
+
+// console.log(giveMeFive({Our:"earth",is:"a",beautyful:"world"}))//["earth","world"]);
+
+
+// Fake Binary Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на «0», а любую цифру 5 и выше на «1». Верните полученную строку.
+
+// function fakeBin(x){
+//   let bin=''
+//   for (i of x){
+//     if (i<5){
+//       bin=bin+0
+//     } else {
+//       bin=bin+1
+//     }
+//   }
+// return bin
+// }
+
+// console.log(fakeBin('45385593107843568')) //'01011110001100111'
+
+// Reversed sequence Создайте функцию, которая возвращает массив целых чисел от n до 1, где n>0. Пример: n=5 --> [5,4,3,2,1]
+
+// const reverseSeq = n => {
+//   let arr=[]
+//   for (i=n; i>0; i--){
+//     arr.push(i)
+//   }
+//   return arr
+// }
+// console.log(reverseSeq(5))
 
 
 
+// Beginner Series #1 School Paperwork Ваши одноклассники попросили вас скопировать для них некоторые документы. Вы знаете, что есть «n» одноклассников, а в документах «m» страниц. Ваша задача — посчитать, сколько чистых страниц вам нужно. Если n < 0 или m < 0, вернуть 0. Пример: п= 5, м=5: 25 п=-5, м=5:0
+
+// function paperwork(n, m) {
+//  if (n > 0 && m > 0){
+//     return n*m
+
+// // }  if (n < 0 && m > 0){
+// //     return n*m
+
+// } 
+//   if (n <= 0 || m <= 0){
+//     return 0
+// }
+// }
+// console.log(paperwork(-5,5)) // 25, 'Failed at paperwork(5, 5)');
+
+
+// Calculate BMI Напишите функцию bmi, которая вычисляет индекс массы тела (bmi = вес / рост2)
+// if bmi <= 18.5 return "Underweight"
+// if bmi <= 25.0 return "Normal"
+// if bmi <= 30.0 return "Overweight"
+// if bmi > 30 return "Obese"
+
+// function bmi(weight, height) {
+//   let bmiNew=weight / (height**2)
+//   if (bmiNew <= 18.5) {
+//         return "Underweight"
+//   } else if (bmiNew <= 25.0) {
+//         return "Normal" 
+//   } else if (bmiNew <= 30.0) {
+//         return "Overweight"
+//   } else if (bmiNew > 30.0){
+//         return "Obese"  
+//   }
+// }
+// console.log(bmi(80, 1.80)) // "Normal"
+
+
+//     break;
+//        case 12:
+//         days=31
+//     break;
+
+//   default: 
+//   }
+//   return days;
+// }
+// console.log(howManydays(12)) //31
 
 
 
+// sequenceSum.js
+// Допишите (с использованием рекурсивного процесса) функцию sequenceSum(), которая находит сумму последовательности целых чисел. Последовательность задается двумя значениями: begin - начало последовательности, end - конец последовательности. Например: begin = 2 и end = 6 дают нам такую последовательность 2, 3, 4, 5, 6. Сумма такой последовательности будет: 20.
+
+// function smallestDivisor(num){
+//   let sum=0
+
+//   return sum
+// }
+// console.log(smallestDivisor(15)
+
+//             Попробуйте разделить число на 2.
+// Если число делится без остатка, то это наименьший делитель.
+// Если нет, то попробуйте следующий делитель.
+// Если ничего не делит число без остатка, то переданное число является простым, так что его наименьший делитель — оно само (не считая 1)
+
+// Переворот строки
+// function makeReverse(string){
+// return string.split('').reverse().join('')
+// }
+
+// console.log(makeReverse('hello, world!'))  
 
 
+// Training JS #14: Methods of Number object Кодирование в функции colorOf. функция принимает 3 параметра:r g b. Это означает значение цвета красного, зеленого и синего. диапазон значений 0-255. Используйте toString(16) Преобразование чисел r g b в шестнадцатеричную форму строки. наконец, объедините их в цветовой веб-код и верните его. код цвета должен начинаться с «#». а затем используйте 2 символа на цвет.
+
+// function colorOf(r,g,b){
+//   let f = function (x) {
+//     return (x<16 ? '0' : '') + x.toString(16) 
+//   };
+//   return "#" +  f(r) + f(g) + f(b);
+// }
+
+// console.log(colorOf(255,0,0)) // "#ff0000");)
+
+//  НЕ РЕШЕНА!!
+
+// #15: Methods of Number object--toFixed(), toExponential() and toPrecision() Кодирование в функции howManySmaller, функция принимает 2 параметра: прибытие. arrпредставляет собой десятичный массив. nявляется десятичной дробью. Первая миссия: пусть все элементы в массиве хранят два десятичных знака (не нужно преобразовывать число n). Вторая миссия: Обход обр, подчитай номер элемента меньше n и верни его.
+
+
+// function howManySmaller(arr,n){
+//   let newArr=[]
+//   newArr=arr.split('')
+//   console.log(newArr) 
+// }
+
+// console.log(howManySmaller([1.234,1.235,1.228],1.24))  //// 2);)
+
+
+
+// // howManySmaller([1.234,1.235,1.228],1.24) should return 2
+// // howManySmaller([1.1888,1.1868,1.1838],1.19) should return 1
+// // howManySmaller([3.1288,3.1212,3.1205],3.1212) should return 2
+
+
+//  НЕ РЕШЕНА!!
+
+
+// Training JS #16: Methods of String object--slice(), substring() and substr()
+//  Кодирование в функции cutIt, функция принимает 1 параметр: обр. arr — массив строк. Первая миссия: Обходя обр, найти кратчайшую длину строки. Вторая миссия: снова пройти через arr, перехватить все строки до кратчайшей длины строки (начиная с index0). вы можете использовать один из slice() substring() или substr() сделать это. вернуть результат после завершения работы.
+// 0, output[0].length
+
+// function cutIt(arr){
+//   let output = arr.sort((a, b) => a.length - b.length)
+//   let newArr=[]
+//   for (let i=0; i<arr.length; i++){
+//      newArr.push(arr[i].slice(0, output[0].length))
+//   }
+//   return newArr
+// }
+
+// console.log(cutIt(["abc","ijklmn","defgh","ijklmn"])) // ["abc","def","ijk"]);
+
+// Opposites Attract Тимми и Сара думают, что они влюблены, но там, где они живут, они узнают об этом, только когда каждый сорвет по цветку. Если у одного из цветов четное количество лепестков, а у другого нечетное количество лепестков, это означает, что они влюблены. Напишите функцию, которая будет принимать количество лепестков каждого цветка и возвращать true, если они влюблены, и false, если нет.
+
+// function lovefunc(flower1, flower2){
+//   if (flower1 %2 !== 0 && flower2 %2 === 0 || flower1 %2 === 0 && flower2 %2 !== 0){
+//     return true
+//   }
+//   return false
+// } 
+
+// console.log(lovefunc(1,2)) // true
+
+// Get the mean of an array
+
+// function getAverage(marks){
+//  return Math.trunc(marks.reduce((a,b) => (a+b))/marks.length)
+// }
+// console.log(getAverage([1,5,87,45,8,8])) //2
+
+
+// Array plus array
+
+// function arrayPlusArray(arr1, arr2) {
+//    return arr1.reduce((a,b)=>(a+b)) + arr2.reduce((c,d)=>(c+d))
+// }
+
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) // 21 
+
+
+// // Beginner - Reduce but Grow
+// Учитывая непустой массив целых чисел, вернуть результат умножения значений вместе по порядку. Пример: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+// function grow(x){
+//    let mult=0
+//   if (x!==[]){
+//     mult=x.reduce((a,b)=>(a*b))
+//   } else {
+//     return 0
+//   }
+//   return mult
+// }
+// console.log(grow([2, 2, 2, 2, 2, 2])) // 64
+
+// function grow(x){
+// return mult=x.reduce((a,b)=>(a*b))
+// }
+// console.log(grow([2, 2, 2, 2, 2, 2])) // 64
+
+// Is he gonna survive?
+// Герой направляется в замок, чтобы выполнить свою миссию. Однако ему сказали, что замок окружен парочкой могущественных драконов! каждому дракону требуется 2 пули, чтобы быть побежденным, наш герой понятия не имеет, сколько пуль он должен нести.. Предполагая, что он собирается схватить определенное количество пуль и двигаться вперед, чтобы сразиться с другим заданным количеством драконов, выживет ли он? Верните True, если да, False в противном случае :)
+
+// function hero(bullets, dragons){
+// if (dragons * 2  <= bullets){
+//   return true
+// } return false
+// } 
+// console.log(hero(1, 2)) // true
+
+// Get the Middle Character Вам дадут слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, вернуть средний символ. Если длина слова четная, верните средние 2 символа.
+
+// function getMiddle(s){
+//   let str=''
+//     for (let i of s){
+//       if ((s.length)%2 !== 0){
+//         // console.log('1',Math.trunc(s.length/2))
+//         str=s[Math.trunc(s.length/2)]
+//       } else {
+//       str=s[Math.trunc(s.length/2)-1]+s[Math.trunc(s.length/2)]
+//       }
+//     }
+//   return str
+// }
+// console.log(getMiddle("middle")) //"dd"
+
+// You're a square! Учитывая целое число, определите, является ли оно квадратным числом: В математике квадратное число или идеальный квадрат — это целое число, являющееся квадратом целого числа; другими словами, это произведение некоторого целого числа на самого себя. В тестах всегда будет использоваться некоторое целое число, так что не беспокойтесь об этом в языках с динамической типизацией.
+
+// var isSquare = function(n){
+//   if (Number.isInteger(Math.sqrt(n))) {
+//     return true
+//   }
+//   return false
+// }
+// console.log(isSquare(25))
+// //true, "25 is a square number (5 * 5)");
+
+// Isograms! Изограмма — это слово, в котором нет повторяющихся букв, последовательных или непоследовательных. Реализуйте функцию, определяющую, является ли строка, содержащая только буквы, изограммой. Предположим, что пустая строка является изограммой. Игнорировать регистр букв.
+
+// function isIsogram(str){
+//    str = str.toLowerCase();
+//    for(i = 0; i < str.length; ++i) {
+//      for(j = i + 1; j < str.length; ++j) {
+//        if(str[i] === str[j]) {
+//          return false;
+//        }
+//      }
+//    }
+//    return true;
+// }
+// Сложное решение через Set
+// function isIsogram(str){
+//   return new Set(str.toUpperCase()).size == str.length;
+// }
+// console.log('1 true',isIsogram("isogram")) // true );
+// console.log('2 false',isIsogram("aba")) // false, "same chars may not be adjacent" );
+// console.log('3 true',isIsogram("")) 
+// console.log('4 false',isIsogram("moOse"))
+// console.log('5 true', isIsogram("Dermatoglyphics")) //true );
+
+  // let find1=str.split('').filter((item, index) => str.indexOf(item) !== index)
+// List Filtering В этом ката вы создадите функцию, которая берет список неотрицательных целых чисел и строк и возвращает новый список с отфильтрованными строками.
+
+// function filter_list(l) {
+//   let newArr=[]
+//   for (let i of l){
+//       if (i=== Number(i)){
+//       newArr.push(i)
+//     }
+//   }
+//   return newArr
+// }
+
+// console.log(filter_list([1,2,'a','b'])) //,[1,2], 'For input [1,2,"a","b"]');
