@@ -1111,3 +1111,167 @@
 // }
 
 // console.log(filter_list([1,2,'a','b'])) //,[1,2], 'For input [1,2,"a","b"]');
+
+
+// НЕ РЕШЕНА!!
+
+// Exes and Ohs Проверьте, содержит ли строка одинаковое количество «x» и «o». Метод должен возвращать логическое значение и не учитывать регистр. Строка может содержать любой символ. Примеры ввода/вывода:
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// // XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+// // XO("zzoo") => false
+
+
+// console.log(XO('xo'))     //true);
+// console.log(XO("xxOo"))   //true);
+// console.log(XO("xxxm"))   //false);
+
+
+// Shortest Word Просто, учитывая строку слов, вернуть длину кратчайшего слова (слов). Строка никогда не будет пустой, и вам не нужно учитывать разные типы данных.
+
+// function findShort(s){
+//    let x=s.split(' ').reduce((a, b,) => ((a.length <= b.length) ? a: b))
+// return x.length
+// }
+
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps")) //3);
+
+// Complementary DNA 
+
+// function DNAStrand(arr){
+//   let newArr = ''
+//   for (let i=0; i<arr.length; i++){
+//     if (arr[i] === 'A'){
+//       newArr=newArr+'T'
+//     }else if (arr[i]=== 'T'){
+//       newArr=newArr+'A'
+//   } else if (arr[i]=== 'C'){
+//        newArr=newArr+'G'
+// }else if (arr[i]=== 'G'){
+//        newArr=newArr+'C'
+//         }
+//     }
+//   return newArr
+// }
+
+// console.log(DNAStrand("AAAA")) // "TTTT","String AAAA is")
+// console.log(DNAStrand("ATTGC")) //"TAACG","String ATTGC is")
+// console.log(DNAStrand("GTAT")) //"CATA","String GTAT is")  
+
+
+// Credit Card Mask Ваша задача — написать функцию maskify, которая заменяет все символы, кроме последних четырех, на «#».
+
+
+// return masked string
+// function maskify(cc) {
+//   let result =''
+//   let numbers=cc.slice(-4)
+//   for (let i=0; i<cc.length-4;i++){
+//     result=result+'#'
+//   }
+//   return result+numbers
+// }
+
+// console.log(maskify('4556364607935616')) // '############5616');
+// console.log(maskify('1')) // '1');
+// console.log(maskify('11111')) // '#1111');
+
+// Sum of two lowest positive integers
+
+
+// function sumTwoSmallestNumbers(numbers) {  
+//   numbers.sort((a,b)=>a-b)
+//   let sum=0
+//   for (let i=0; i<numbers.length; i++){
+//     sum=numbers[0]+numbers[1]
+//   }
+//   return sum
+// }
+
+// console.log(sumTwoSmallestNumbers([22, 8, 5, 19, 22])) // 13
+
+// Тесты проходят не все. Нужно делать через sum = Math.floor(p0 + p0 * (percent/100) + aug)
+
+// Growth of a Population В маленьком городке население р0 = 1000 в начале года. Население регулярно увеличивается на 2 процента в год, и более 50 новых жителей ежегодно переезжают в город. Сколько лет нужно городу, чтобы его население стало больше или равно p = 1200 жителей?
+// At the end of the first year there will be: 
+// 1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+
+// function nbYear(p0, percent, aug, p) {
+//   let years = 0;
+//   for (years; p0 <= p; years++){
+//      p0 += p0 * (percent / 100) + aug
+//   }
+//      return years
+// }
+
+// console.log(nbYear(1000, 2, 50, 1200)) // 15
+
+// Matrix Transpose Напишите функцию, которая выводит транспонированную матрицу — новую матрицу, в которой столбцы и строки оригинала меняются местами. Например, транспонирование:
+
+
+// function transpose(matrix) {
+//   return matrix.
+
+// }
+
+// console.log(transpose([[1,2,3],
+//                        [4,5,6]])) 
+// // [[1,4],
+//  // [2,5],
+//  // [3,6]]);
+
+
+// // Are You Playing Banjo? Создайте функцию, которая отвечает на вопрос «Вы играете на банджо?». Если ваше имя начинается с буквы «R» или строчной «r», вы играете на банджо! Функция принимает имя в качестве единственного аргумента и возвращает одну из следующих строк:
+
+// function areYouPlayingBanjo(name) {
+//   for (i=0; i<name.length;i++){
+//     if (name[0]==='R' || name[0]==='r'){
+//       return `${name} plays banjo`
+//     } return`${name} does not play banjo`
+//   }
+// }
+
+// console.log(areYouPlayingBanjo("Adam")) // "Adam does not play banjo");
+// console.log(areYouPlayingBanjo("Paul")) //"Paul does not play banjo");
+// console.log(areYouPlayingBanjo("Ringo")) // "Ringo plays banjo");
+// console.log(areYouPlayingBanjo("bravo")) // "bravo does not play banjo");
+// console.log(areYouPlayingBanjo("rolf")) // "rolf plays banjo");
+
+
+// // Simple multiplication Это ката об умножении заданного числа на восемь, если оно четное, и на девять в противном случае.
+// function simpleMultiplication(number) {
+//   return number % 2 === 0 ? number * 8 : number * 9;
+// }
+
+// console.log(simpleMultiplication(2)); // 16,'Should return double given argument..')
+// console.log(simpleMultiplication(1)); // 9,'Should return double given argument..')
+// console.log(simpleMultiplication(8)); //64,'Should return given argument times eight...')
+
+// Beginner Series #3 Sum of Numbers Даны два целых числа a и b, которые могут быть положительными или отрицательными, найдите сумму всех целых чисел между ними и включая их и верните ее. Если два числа равны, верните a или b. Примечание: a и b не упорядочены!
+
+// function getSum(a, b) {
+//   let sum = 0;
+//   if (a === b) {
+//     return a || b;
+//   } else if (b > a) {
+//     sum = ((b - a + 1) * (a + b)) / 2;
+//   } else {
+//     sum = ((a - b + 1) * (a + b)) / 2;
+//   }
+
+//   return sum;
+// }
+
+// console.log(getSum(0, -1)); //-1);
+// console.log(getSum(0, 1)); //1);
+// console.log(getSum(1, 1)); //1);
+
+// Friend or Foe? Создайте программу, которая фильтрует список строк и возвращает список, содержащий только имена ваших друзей. Если в имени ровно 4 буквы, можете быть уверены, что оно должно быть вашим другом! В противном случае, вы можете быть уверены, что он не... Пример: ввод = ["Райан", "Киран", "Джейсон", "Юс"], вывод = ["Райан", "Юс"] то есть
+
+// function friend(friends) {
+//    return friends.filter(el=>el.length===4)
+//  }
+ 
+//  console.log(friend(['Ryan', 'Jimmy', '123', '4', 'Cool Man'])); //["Ryan"])
+ 
